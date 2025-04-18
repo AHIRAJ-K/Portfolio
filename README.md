@@ -112,9 +112,9 @@ Name: AHIRAJ K
 
 Email: ahiraj.me@gmail.com
 
-LinkedIn: linkedin.com/in/ahiraj-k
+[LinkedIn](linkedin.com/in/ahiraj-k)
 
-GitHub: github.com/AHIRAJ-K
+[GitHub](github.com/AHIRAJ-K)
 
 ---
 
