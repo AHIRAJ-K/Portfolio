@@ -76,7 +76,7 @@ const SkillsSection = () => {
     },
     {
       name: "Proteus",
-      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/proteus.png" // Using a circuit board icon
+      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/proteus.png?raw=true" // Using a circuit board icon
     },
     {
       name: "Tinkercad",
