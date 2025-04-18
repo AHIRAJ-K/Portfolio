@@ -123,4 +123,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ---
 
-***AI is a supportive tool, not an adversary—helping streamline backend tasks so I can devote more energy to crafting unique, user-centered designs.***
+***This website is proof that human creativity and AI assistance can coexist beautifully. I directed every aspect of the design and structure, and AI helped me bring it to life faster and more efficiently.***
