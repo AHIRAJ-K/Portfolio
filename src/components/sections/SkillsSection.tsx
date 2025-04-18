@@ -64,15 +64,15 @@ const SkillsSection = () => {
     },
     {
       name: "Keil uVision",
-      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/Keil.png" // Using a microcontroller icon
+      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/Keil.png?raw=true" // Using a microcontroller icon
     },
     {
       name: "TINA",
-      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/tina-logo.png" // Using a circuit icon
+      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/tina-logo.png?raw=true" // Using a circuit icon
     },
     {
       name: "Xilinx Vivado",
-      icon: "https://api.iconify.design/material-symbols:developer-board.svg?color=%230d9488" // Using a developer board icon
+      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/Vivado.png?raw=true" // Using a developer board icon
     },
     {
       name: "Proteus",
@@ -80,7 +80,7 @@ const SkillsSection = () => {
     },
     {
       name: "Tinkercad",
-      icon: "https://api.iconify.design/mdi/tools.svg?color=%230d9488" // Using a tools icon
+      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/TINKERCAD.png?raw=true" // Using a tools icon
     },
     {
       name: "Photoshop",
