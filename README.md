@@ -103,7 +103,7 @@ vite.config.ts
 
 Open Source: Thanks to React, Tailwind CSS, and the broader community.
 
-##📧 Contact Me
+## 📧 Contact Me
 Name: AHIRAJ K
 
 Email: ahiraj.me@gmail.com
@@ -112,7 +112,7 @@ LinkedIn: linkedin.com/in/ahiraj-k
 
 GitHub: github.com/AHIRAJ-K
 
-📜 License
+## 📜 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 AI is a supportive tool, not an adversary—helping streamline backend tasks so I can devote more energy to crafting unique, user-centered designs.
