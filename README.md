@@ -54,6 +54,7 @@ npm install   # or yarn install
 # Start development server
 npm run dev   # or yarn dev
 ```
+---
 
 ## 📂 Project Structure
 
@@ -95,6 +96,7 @@ tailwind.config.ts
 tsconfig.json
 vite.config.ts
 ```
+---
 
 ## 🌟 Acknowledgments
 **Design & Graphics**: All visuals created by me using Figma and Illustrator.
@@ -102,6 +104,8 @@ vite.config.ts
 **AI Collaboration**: Utilized AI tools for backend assistance, code suggestions, and performance optimizations.
 
 Open Source: Thanks to React, Tailwind CSS, and the broader community.
+
+---
 
 ## 📧 Contact Me
 Name: AHIRAJ K
@@ -112,7 +116,11 @@ LinkedIn: linkedin.com/in/ahiraj-k
 
 GitHub: github.com/AHIRAJ-K
 
+---
+
 ## 📜 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-AI is a supportive tool, not an adversary—helping streamline backend tasks so I can devote more energy to crafting unique, user-centered designs.
+---
+
+***AI is a supportive tool, not an adversary—helping streamline backend tasks so I can devote more energy to crafting unique, user-centered designs.***
