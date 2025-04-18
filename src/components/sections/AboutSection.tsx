@@ -68,9 +68,12 @@ const AboutSection = () => {
             duration: 0.6,
             delay: 0.3
           }}>
-              <div className="w-full h-full bg-muted flex items-center justify-center">
-                <span className="text-6xl">AK</span>
-              </div>
+                <img 
+                  src="https://github.com/AHIRAJ-K/Portfolio/blob/main/Images/PROFILE.jpg?raw=true" // <-- replace with actual image path
+                  alt="Ahiraj K" 
+                  className="w-full h-full object-cover" 
+                />
+
               <div className="absolute inset-0 bg-primary/10 pointer-events-none"></div>
             </motion.div>
           </div>
