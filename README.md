@@ -127,4 +127,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ---
 
-***This website is proof that human creativity and AI assistance can coexist beautifully. I directed every aspect of the design and structure, and AI helped me bring it to life faster and more efficiently.***
+> ***This website is proof that human creativity and AI assistance can coexist beautifully. I directed every aspect of the design and structure, and AI helped me bring it to life faster and more efficiently.***
