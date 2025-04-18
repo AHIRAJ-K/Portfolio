@@ -53,8 +53,9 @@ npm install   # or yarn install
 
 # Start development server
 npm run dev   # or yarn dev
+```
 
-📂 Project Structure
+##📂 Project Structure
 
 public/
 ├── placeholder.svg
@@ -93,14 +94,14 @@ tailwind.config.ts
 tsconfig.json
 vite.config.ts
 
-🌟 Acknowledgments
+##🌟 Acknowledgments
 **Design & Graphics**: All visuals created by me using Figma and Illustrator.
 
 **AI Collaboration**: Utilized AI tools for backend assistance, code suggestions, and performance optimizations.
 
 Open Source: Thanks to React, Tailwind CSS, and the broader community.
 
-📧 Contact Me
+##📧 Contact Me
 Name: AHIRAJ K
 
 Email: ahiraj.me@gmail.com
