@@ -55,7 +55,7 @@ npm install   # or yarn install
 npm run dev   # or yarn dev
 ```
 
-##📂 Project Structure
+## 📂 Project Structure
 
 ```plaintext
 public/
@@ -96,7 +96,7 @@ tsconfig.json
 vite.config.ts
 ```
 
-##🌟 Acknowledgments
+## 🌟 Acknowledgments
 **Design & Graphics**: All visuals created by me using Figma and Illustrator.
 
 **AI Collaboration**: Utilized AI tools for backend assistance, code suggestions, and performance optimizations.
