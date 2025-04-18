@@ -123,7 +123,7 @@ Email: ahiraj.me@gmail.com
 ---
 
 ## 📜 License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the [MIT License](https://github.com/AHIRAJ-K/portfolio/blob/main/LICENCE) . See the LICENSE file for details.
 
 ---
 
