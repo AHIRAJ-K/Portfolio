@@ -18,14 +18,6 @@ const ExperienceSection = () => {
   const experiences: TimelineItem[] = [
     {
       id: 1,
-      title: "Your Next Achievement",
-      organization: "Institution Name",
-      period: "Start Date - End Date",
-      description: "Add your description here. This could be about your achievements, responsibilities, or key learnings during this period.",
-      type: "education",
-    },
-    {
-      id: 2,
       title: "B.Tech in Electronics and Communication Engineering",
       organization: "Rajiv Gandhi Institute of Technology (RIT)",
       period: "2023 - Present",
@@ -33,7 +25,7 @@ const ExperienceSection = () => {
       type: "education",
     },
     {
-      id: 3,
+      id: 2,
       title: "Higher Secondary Education",
       organization: "Sevamandir Post Basic HSS",
       period: "2020 - 2022",
