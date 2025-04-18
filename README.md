@@ -106,6 +106,10 @@ vite.config.ts
 Open Source: Thanks to React, Tailwind CSS, and the broader community.
 
 ---
+## 📫 Let's Connect
+- 🔗 [LinkedIn](https://www.linkedin.com/in/ahiraj-k/)
+- 🔗 [GitHub](github.com/AHIRAJ-K/)
+- 📧 Email: Ahiraj.me@gmail.com
 
 ## 📧 Contact Me
 Name: AHIRAJ K
@@ -114,7 +118,7 @@ Email: ahiraj.me@gmail.com
 
 [LinkedIn](linkedin.com/in/ahiraj-k)
 
-[GitHub](github.com/AHIRAJ-K)
+
 
 ---
 
