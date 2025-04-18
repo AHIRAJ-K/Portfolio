@@ -6,9 +6,6 @@ Welcome to my personal portfolio! 🚀 This website is a showcase of my journey 
 ## **You can view the live 🌐 website hosted on Vercel [PORTFOLIO](https://ahiraj.vercel.app)**
 
 
----
-
-
 ## ✨ Features
 
 - **🎨 Original Design**  
