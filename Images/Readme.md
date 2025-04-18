@@ -1,6 +1,6 @@
-# Logos and Images
+#  Images and Logos
 
-This folder contains logo assets and images used in the portfolio website.
+This folder contains Image and Logo assets used in the portfolio website.
 
 File updates here will reflect on the live site after deployment.  
 Ensure logos and images are optimized for the web (e.g., SVG or compressed PNG formats).
