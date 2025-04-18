@@ -64,7 +64,7 @@ const SkillsSection = () => {
     },
     {
       name: "Keil uVision",
-      icon: "https://api.iconify.design/mdi/chip.svg?color=%230d9488" // Using a microcontroller icon
+      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/Keil.png" // Using a microcontroller icon
     },
     {
       name: "TINA",
