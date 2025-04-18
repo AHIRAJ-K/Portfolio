@@ -3,7 +3,7 @@
 Welcome to my personal portfolio! 🚀 This website is a showcase of my journey in web development and design, featuring dynamic pages, custom graphics, and interactive elements. Every design decision stems from my imagination and frontend expertise, while AI tools have been leveraged judiciously to enhance backend workflows and optimize repetitive tasks.
 
 
-## **You can view the live 🌐 website hosted on Vercel [Portfolio](https://ahiraj.vercel.app)**
+## **You can view the live [🌐Portfolio website ](https://ahiraj.vercel.app) hosted on Vercel**
 
 
 ## ✨ Features
