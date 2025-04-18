@@ -68,7 +68,7 @@ const SkillsSection = () => {
     },
     {
       name: "TINA",
-      icon: "https://api.iconify.design/mdi/circuit.svg?color=%230d9488" // Using a circuit icon
+      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/tina-logo.png" // Using a circuit icon
     },
     {
       name: "Xilinx Vivado",
@@ -76,7 +76,7 @@ const SkillsSection = () => {
     },
     {
       name: "Proteus",
-      icon: "https://api.iconify.design/material-symbols:circuit-board.svg?color=%230d9488" // Using a circuit board icon
+      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/proteus.png" // Using a circuit board icon
     },
     {
       name: "Tinkercad",
