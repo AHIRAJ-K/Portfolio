@@ -57,6 +57,7 @@ npm run dev   # or yarn dev
 
 ##📂 Project Structure
 
+```plaintext
 public/
 ├── placeholder.svg
 └── robots.txt
@@ -93,6 +94,7 @@ package.json
 tailwind.config.ts
 tsconfig.json
 vite.config.ts
+```
 
 ##🌟 Acknowledgments
 **Design & Graphics**: All visuals created by me using Figma and Illustrator.
