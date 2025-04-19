@@ -42,15 +42,15 @@ const Header = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <button
-            onClick={() => navigate('/')}
-            className="text-primary text-xl font-bold cursor-pointer hover:opacity-80 transition-opacity"
+            onClick={() => navigate("/")}
+            className="text-primary text-xl font-bold cursor-pointer hover:opacity-80 transition-opacity whitespace-nowrap"
           >
             AHIRAJ K
           </button>
         </motion.div>
 
-        <nav>
-          <ul className="flex space-x-6">
+        <nav className="overflow-x-auto md:overflow-visible">
+          <ul className="flex space-x-6 whitespace-nowrap">
             {navItems.map((item, index) => (
               <motion.li
                 key={item.title}
