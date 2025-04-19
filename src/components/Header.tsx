@@ -34,6 +34,7 @@ const Header = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
+        {/* Logo / Brand */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -47,8 +48,8 @@ const Header = () => {
           </button>
         </motion.div>
 
-        {/* add ml-6 on mobile; md:ml-0 resets on desktop */}
-        <nav className="ml-6 overflow-x-auto md:ml-0 md:overflow-visible">
+        {/* Nav: swipeable on mobile, hidden scrollbar */}
+        <nav className="ml-6 overflow-x-auto md:ml-0 md:overflow-visible no-scrollbar">
           <ul className="flex space-x-6 whitespace-nowrap">
             {navItems.map((item, index) => (
               <motion.li
