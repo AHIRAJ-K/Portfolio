@@ -22,7 +22,7 @@ Welcome to my personal portfolio! 🚀 This website is a showcase of my journey 
   - **Projects**: Gallery of work with interactive cards.  
   - **Skills**: Visual skill map highlighting technologies.  
   - **Experience**: Timeline of roles and achievements.  
-  - **Contact**: Connection form powered by Formspree (or similar).
+  - **Contact**: Contact details and a form.
 
 ---
 
