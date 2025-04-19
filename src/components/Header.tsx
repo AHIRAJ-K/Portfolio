@@ -8,10 +8,8 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      setIsScrolled(scrollPosition > 50);
+      setIsScrolled(window.scrollY > 50);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -49,7 +47,8 @@ const Header = () => {
           </button>
         </motion.div>
 
-        <nav className="overflow-x-auto md:overflow-visible">
+        {/* add ml-6 on mobile; md:ml-0 resets on desktop */}
+        <nav className="ml-6 overflow-x-auto md:ml-0 md:overflow-visible">
           <ul className="flex space-x-6 whitespace-nowrap">
             {navItems.map((item, index) => (
               <motion.li
