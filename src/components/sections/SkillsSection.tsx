@@ -28,7 +28,7 @@ const SkillsSection = () => {
     },
     {
       name: "Embedded C",
-      icon: "https://api.iconify.design/icon-park/chip.svg?color=%230d9488" // Using a chip icon for Embedded C
+      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/Embedded%20C.png?raw=true" // Using a chip icon for Embedded C
     },
     {
       name: "HTML",
