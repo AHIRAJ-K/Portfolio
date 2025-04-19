@@ -3,7 +3,7 @@
 Welcome to my personal portfolio! 🚀 This website is a showcase of my journey in web development and design, featuring dynamic pages, custom graphics, and interactive elements. Every design decision stems from my imagination and frontend expertise, while AI tools have been leveraged judiciously to enhance backend workflows and optimize repetitive tasks.
 
 
-## **You can view the live [🌐Portfolio website ](https://ahiraj.vercel.app) hosted on Vercel**
+## **You can view the live [🌐Portfolio website ](https://ahiraj.vercel.app)**
 
 
 ## ✨ Features
@@ -112,6 +112,14 @@ Open Source: Thanks to React, Tailwind CSS, and the broader community.
 - 🔗 [LinkedIn](https://www.linkedin.com/in/ahiraj-k/)
 - 🔗 [GitHub](https://github.com/AHIRAJ-K)
 - 📧 Email: Ahiraj.me@gmail.com
+
+---
+
+## 🌐 Deployment
+
+This portfolio is hosted on [Vercel](https://vercel.com), a fast and reliable platform for deploying modern web apps.  
+The site is **deployed directly via my [GitHub repository](https://github.com/AHIRAJ-K/portfolio)** using Vercel's seamless CI/CD integration.  
+Every push to the `main` branch automatically triggers a build and updates the live site, keeping it always in sync with the latest code.
 
 ---
 
