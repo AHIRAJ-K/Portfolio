@@ -113,15 +113,6 @@ Open Source: Thanks to React, Tailwind CSS, and the broader community.
 - 🔗 [GitHub](https://github.com/AHIRAJ-K)
 - 📧 Email: Ahiraj.me@gmail.com
 
-## 📧 Contact Me
-Name: AHIRAJ K
-
-Email: ahiraj.me@gmail.com
-
-[LinkedIn](linkedin.com/in/ahiraj-k)
-
-
-
 ---
 
 ## 📜 License
