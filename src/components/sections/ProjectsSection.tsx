@@ -13,7 +13,7 @@ const ProjectsSection = () => {
       id: 1,
       title: "Portfolio Website",
       description: "A responsive portfolio website showcasing projects and skills with a modern design and smooth animations.",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", // Code on screen image
+      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
       tags: ["React", "TypeScript", "HTML", "Tailwind CSS", "JavaScript"],
       link: "https://github.com/AHIRAJ-K/Portfolio",
     },
@@ -21,17 +21,17 @@ const ProjectsSection = () => {
       id: 2,
       title: "4-Bit Digital Lock System",
       description: "Designed a 4-bit digital lock in Verilog with unlock, alarm, and reset features, tested using a Verilog testbench.",
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5", // Digital matrix with lock
+      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5",
       tags: ["Verilog", "Xilinx Vivado"],
-      link: "#",
+      link: "#", // Update later
     },
     {
       id: 3,
       title: "Laser Security System",
       description: "Developed a laser security system that triggers a buzzer and LED when the laser beam is interrupted.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475", // Circuit board close-up
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
       tags: ["8051 Microcontroller", "Embedded C", "Arduino"],
-      link: "#",
+      link: "#", // Update later
     }
   ];
 
@@ -110,6 +110,13 @@ const ProjectsSection = () => {
                 <Button
                   size="sm"
                   className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/90"
+                  onClick={() => {
+                    if (project.link === "#") {
+                      alert("Link coming soon!");
+                    } else {
+                      window.open(project.link, "_blank");
+                    }
+                  }}
                 >
                   View Project
                   <ExternalLink className="ml-2 h-4 w-4" />
