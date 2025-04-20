@@ -15,7 +15,7 @@ const ProjectsSection = () => {
       description: "A responsive portfolio website showcasing projects and skills with a modern design and smooth animations.",
       image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", // Code on screen image
       tags: ["React", "TypeScript", "HTML", "Tailwind CSS", "JavaScript"],
-      link: "#",
+      link: "https://github.com/AHIRAJ-K/Portfolio",
     },
     {
       id: 2,
