@@ -34,9 +34,8 @@ const AboutSection = () => {
               <Button 
                 className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 hover:scale-105 hover:translate-y-0"
                 onClick={() => {
-                  // Add your resume link here when available
-                  // window.open('your-resume-link', '_blank')
-                  alert('Resume link will be added soon!');
+                  window.open('https://your-resume-link.com', '_blank');
+
                 }}
               >
                 <FileText className="mr-2 h-4 w-4" />
