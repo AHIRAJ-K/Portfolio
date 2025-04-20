@@ -34,7 +34,7 @@ const AboutSection = () => {
               <Button 
                 className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 hover:scale-105 hover:translate-y-0"
                 onClick={() => {
-                  window.open('https://your-resume-link.com', '_blank');
+                  window.open('https://ahiraj-k.github.io/resume/Ahiraj-Resume.pdf', '_blank');
 
                 }}
               >
