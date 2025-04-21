@@ -23,7 +23,7 @@ const ProjectsSection = () => {
       description: "Designed a 4-bit digital lock in Verilog with unlock, alarm, and reset features, tested using a Verilog testbench.",
       image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5",
       tags: ["Verilog", "Xilinx Vivado"],
-      link: "#", // Update later
+      link: "https://github.com/AHIRAJ-K/digital-lock-verilog", // Update later
     },
     {
       id: 3,
