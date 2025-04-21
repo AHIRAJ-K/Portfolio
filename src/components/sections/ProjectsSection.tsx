@@ -68,7 +68,7 @@ const ProjectsSection = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Explore my latest works and technical projects in electronics and communication engineering.
+            Explore my latest works and technical projects across electronics, programming, and beyond.
           </motion.p>
         </div>
 
