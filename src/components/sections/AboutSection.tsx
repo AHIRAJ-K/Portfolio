@@ -21,13 +21,13 @@ const AboutSection = () => {
             <h2 className="font-bold mb-6 text-5xl">About Me</h2>
             
             <p className="text-muted-foreground mb-6">
-              Hi there! I'm AHIRAJ K, an Electronics & Communication Engineering student passionate about technology and innovation. 
-              I specialize in designing and developing electronic systems and solutions to real-world problems.
+              Hi there! I’m AHIRAJ K, an Electronics & Communication Engineering undergraduate passionate about technology and innovation. 
+              I specialize in designing and developing electronic systems and solutions to real-world applications.
             </p>
             
             <p className="text-muted-foreground mb-8">
               With a strong foundation in both hardware and software, I enjoy exploring the intersection of these fields to create meaningful projects. 
-              I'm constantly learning and expanding my skills in embedded systems, circuit design, and signal processing.
+              I’m constantly learning and expanding my skills in VLSI design, embedded systems development, and front-end web development.
             </p>
             
             <div className="flex flex-wrap gap-4">
