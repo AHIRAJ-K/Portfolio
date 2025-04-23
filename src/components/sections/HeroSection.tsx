@@ -52,7 +52,7 @@ const HeroSection = () => {
           }}
           transition={{ duration: 0.4, delay: 0.2 }}
         >
-          Electronics & Communication Engineering Student
+          ECE Undergraduate | VLSI & Embedded Systems Enthusiast
         </motion.p>
         
         <motion.div
