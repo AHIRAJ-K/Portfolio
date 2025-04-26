@@ -23,10 +23,6 @@ const SkillsSection = () => {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
     },
     {
-      name: "MATLAB",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg"
-    },
-    {
       name: "Embedded C",
       icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/Embedded%20C.png?raw=true" // Using a chip icon for Embedded C
     },
