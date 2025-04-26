@@ -11,7 +11,7 @@ const SkillsSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.1 });
 
-  // Updated Programming Languages with fixed logos
+  
   const programmingLanguages: Skill[] = [
     {
       name: "C/C++",
@@ -39,7 +39,7 @@ const SkillsSection = () => {
     }
   ];
 
-  // Updated Software & Tools with reliable icons
+  
   const tools: Skill[] = [
     {
       name: "Git",
@@ -91,7 +91,7 @@ const SkillsSection = () => {
     }
   ];
 
-  // Updated Soft Skills with colorful, meaningful icons
+  
   const softSkills: Skill[] = [
     {
       name: "Teamwork",
@@ -119,7 +119,7 @@ const SkillsSection = () => {
     }
   ];
 
-  // Render skill cards with actual images
+  
   const renderSkillCards = (skills: Skill[]) => {
     return (
       <motion.div
