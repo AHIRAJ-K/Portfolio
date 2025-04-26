@@ -1,4 +1,3 @@
-
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
@@ -225,7 +224,7 @@ const SkillsSection = () => {
         </div>
 
         <div className="space-y-16">
-          {/* Programming Languages */}
+          {/* Updated Programming & Web Technologies */}
           <div>
             <motion.h3
               className="text-2xl font-bold mb-6 text-primary"
@@ -244,7 +243,7 @@ const SkillsSection = () => {
                 duration: 0.5
               }}
             >
-              Programming Languages
+              Programming & Web Technologies
             </motion.h3>
             {renderSkillCards(programmingLanguages)}
           </div>
