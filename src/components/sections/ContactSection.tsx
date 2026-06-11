@@ -1,4 +1,3 @@
-
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Button } from "@/components/ui/button";
@@ -6,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
 import { toast } from "@/components/ui/sonner";
+import { useForm, ValidationError } from '@formspree/react';
 import { 
   Linkedin, 
   Github, 
@@ -18,6 +18,7 @@ import {
 export const ContactSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.1 });
+  const [state, handleFormspreeSubmit] = useForm('mwvjnzlq');
 
   const contactInfo = [
     {
@@ -57,20 +58,12 @@ export const ContactSection = () => {
     },
   ];
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const formData = new FormData(e.currentTarget);
-    const name = formData.get('name') as string;
-    const email = formData.get('email') as string;
-    const message = formData.get('message') as string;
-
-    // Open email client with pre-filled email
-    const mailtoLink = `mailto:ahiraj.me@gmail.com?subject=Contact from ${name}&body=${encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
-    )}`;
-    window.location.href = mailtoLink;
-    
-    toast.success("Opening email client...");
+    await handleFormspreeSubmit(e);
+    if (state.succeeded) {
+      toast.success("Message sent successfully!");
+    }
   };
 
   return (
@@ -140,44 +133,53 @@ export const ContactSection = () => {
             <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
             
             <Card className="bg-card border-border p-6">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="space-y-4">
-                  <div>
-                    <Input 
-                      name="name"
-                      placeholder="Your Name" 
-                      required
-                      className="border-border bg-muted/20 focus:border-primary" 
-                    />
-                  </div>
-                  
-                  <div>
-                    <Input 
-                      name="email"
-                      type="email" 
-                      placeholder="Your Email" 
-                      required
-                      className="border-border bg-muted/20 focus:border-primary" 
-                    />
-                  </div>
-                  
-                  <div>
-                    <Textarea 
-                      name="message"
-                      placeholder="Your Message" 
-                      required
-                      className="min-h-32 border-border bg-muted/20 focus:border-primary" 
-                    />
-                  </div>
+              {state.succeeded ? (
+                <div className="text-center py-12">
+                  <p className="text-2xl font-bold text-primary mb-2">Message Sent!</p>
+                  <p className="text-muted-foreground">Thanks for reaching out. I'll get back to you soon.</p>
                 </div>
-                
-                <Button 
-                  type="submit" 
-                  className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground hover-glow"
-                >
-                  <Send className="mr-2 h-4 w-4" /> Send Message
-                </Button>
-              </form>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="space-y-4">
+                    <div>
+                      <Input 
+                        name="name"
+                        placeholder="Your Name" 
+                        required
+                        className="border-border bg-muted/20 focus:border-primary" 
+                      />
+                    </div>
+                    <div>
+                      <Input 
+                        name="email"
+                        type="email" 
+                        placeholder="Your Email" 
+                        required
+                        className="border-border bg-muted/20 focus:border-primary" 
+                      />
+                      <ValidationError field="email" prefix="Email" errors={state.errors} />
+                    </div>
+                    <div>
+                      <Textarea 
+                        name="message"
+                        placeholder="Your Message" 
+                        required
+                        className="min-h-32 border-border bg-muted/20 focus:border-primary" 
+                      />
+                      <ValidationError field="message" prefix="Message" errors={state.errors} />
+                    </div>
+                  </div>
+                  
+                  <Button 
+                    type="submit" 
+                    disabled={state.submitting}
+                    className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground hover-glow"
+                  >
+                    <Send className="mr-2 h-4 w-4" />
+                    {state.submitting ? "Sending..." : "Send Message"}
+                  </Button>
+                </form>
+              )}
             </Card>
           </motion.div>
         </div>
