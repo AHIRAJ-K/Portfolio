@@ -68,7 +68,7 @@ const AboutSection = () => {
             delay: 0.3
           }}>
                 <img 
-                  src="https://github.com/AHIRAJ-K/Portfolio/blob/main/Images/PROFILE.jpg?raw=true" // <-- replace with actual image path
+                  src="https://github.com/AHIRAJ-K/Portfolio/blob/main/Images/PROFILE_1.jpg?raw=true" // <-- replace with actual image path
                   alt="Ahiraj K" 
                   className="w-full h-full object-cover" 
                 />
