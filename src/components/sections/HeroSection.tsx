@@ -24,11 +24,9 @@ const HeroSection = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Typing effect
   useEffect(() => {
     const current = roles[roleIndex];
     let timeout: ReturnType<typeof setTimeout>;
-
     if (typing) {
       if (displayed.length < current.length) {
         timeout = setTimeout(() => {
@@ -47,7 +45,6 @@ const HeroSection = () => {
         setTyping(true);
       }
     }
-
     return () => clearTimeout(timeout);
   }, [displayed, typing, roleIndex]);
 
@@ -60,7 +57,6 @@ const HeroSection = () => {
       <Spotlight variant="static" />
 
       <div className="container mx-auto px-4 z-10 text-center">
-        {/* Name */}
         <motion.h1
           className="text-7xl md:text-8xl font-bold mb-4 tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400"
           initial={{ opacity: 0, y: 20 }}
@@ -75,7 +71,6 @@ const HeroSection = () => {
           AHIRAJ K
         </motion.h1>
 
-        {/* Typing subtitle */}
         <motion.div
           className="text-xl md:text-2xl text-muted-foreground mb-6 h-8"
           initial={{ opacity: 0, y: 20 }}
@@ -89,9 +84,8 @@ const HeroSection = () => {
           <span className="inline-block w-0.5 h-5 bg-white ml-1 animate-pulse" />
         </motion.div>
 
-        {/* One liner */}
         <motion.p
-          className="text-base md:text-lg text-muted-foreground/70 mb-10 max-w-xl mx-auto"
+          className="text-base md:text-lg text-muted-foreground mb-10 max-w-xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{
             opacity: isVisible ? (scrolled ? 0 : 1) : 0,
@@ -102,7 +96,6 @@ const HeroSection = () => {
           Building hardware that works — from FSM logic to PCB layout.
         </motion.p>
 
-        {/* CTA Buttons */}
         <motion.div
           className="flex flex-col sm:flex-row gap-4 justify-center mb-14"
           initial={{ opacity: 0, y: 20 }}
@@ -112,21 +105,10 @@ const HeroSection = () => {
           }}
           transition={{ duration: 0.4, delay: 0.45 }}
         >
-          
-            href="#projects"
-            className="px-6 py-3 rounded-md bg-white text-black font-semibold text-sm hover:bg-neutral-200 transition-colors"
-          >
-            View Projects
-          </a>
-          
-            href="#contact"
-            className="px-6 py-3 rounded-md border border-white/20 text-white font-semibold text-sm hover:bg-white/10 transition-colors"
-          >
-            Get In Touch
-          </a>
+          <a href="#projects" className="px-6 py-3 rounded-md bg-white text-black font-semibold text-sm transition-colors">View Projects</a>
+          <a href="#contact" className="px-6 py-3 rounded-md font-semibold text-sm transition-colors text-white" style={{ border: "1px solid rgba(255,255,255,0.2)" }}>Get In Touch</a>
         </motion.div>
 
-        {/* Down arrow */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: isVisible ? (scrolled ? 0 : 1) : 0 }}
@@ -143,7 +125,7 @@ const HeroSection = () => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="text-white/40"
+              className="text-white"
             >
               <path d="M12 5v14M5 12l7 7 7-7" />
             </svg>
