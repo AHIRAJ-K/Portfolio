@@ -1,4 +1,3 @@
-
 import { useCallback } from "react";
 import type { Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
@@ -12,10 +11,15 @@ const ParticlesBackground = () => {
   return (
     <Particles
       id="tsparticles"
-      className="absolute inset-0 -z-10"
+      className="absolute inset-0 z-0"
       init={particlesInit}
       options={{
         fpsLimit: 120,
+        background: {
+          color: {
+            value: "transparent",
+          },
+        },
         particles: {
           color: {
             value: "#ffffff",
@@ -24,12 +28,12 @@ const ParticlesBackground = () => {
             color: "#ffffff",
             distance: 150,
             enable: true,
-            opacity: 0.4,
+            opacity: 0.2,
             width: 1,
           },
           move: {
             enable: true,
-            speed: 1,
+            speed: 0.8,
             direction: "none",
             random: false,
             outModes: {
@@ -42,10 +46,10 @@ const ParticlesBackground = () => {
               enable: true,
               area: 800,
             },
-            value: 100,
+            value: 80,
           },
           opacity: {
-            value: 0.4,
+            value: 0.25,
           },
           shape: {
             type: "circle",

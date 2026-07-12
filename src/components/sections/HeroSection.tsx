@@ -4,10 +4,10 @@ import ParticlesBackground from "../ParticlesBackground";
 import { Spotlight } from "../ui/spotlight-new";
 
 const roles = [
-  "Embedded Systems Engineer",
-  "FPGA Developer",
+  "ECE Undergraduate @ RIT",
+  "Embedded Systems Enthusiast",
+  "FPGA & Verilog Developer",
   "PCB Designer",
-  "ECE Undergraduate",
 ];
 
 const HeroSection = () => {
@@ -106,7 +106,7 @@ const HeroSection = () => {
           transition={{ duration: 0.4, delay: 0.45 }}
         >
           <a href="#projects" className="px-6 py-3 rounded-md bg-white text-black font-semibold text-sm transition-colors">View Projects</a>
-          <a href="#contact" className="px-6 py-3 rounded-md font-semibold text-sm transition-colors text-white" style={{ border: "1px solid rgba(255,255,255,0.2)" }}>Get In Touch</a>
+          <a href="#contact" className="px-6 py-3 rounded-md font-semibold text-sm transition-colors text-white" style={{ border: "1px solid rgba(255,255,255,0.2)" }}>Hire Me</a>
         </motion.div>
 
         <motion.div
