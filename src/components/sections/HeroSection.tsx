@@ -4,7 +4,7 @@ import ParticlesBackground from "../ParticlesBackground";
 import { Spotlight } from "../ui/spotlight-new";
 
 const roles = [
-  "ECE Undergraduate @ RIT",
+  "ECE Undergraduate",
   "Embedded Systems Enthusiast",
   "FPGA & Verilog Developer",
   "PCB Designer",
@@ -105,8 +105,8 @@ const HeroSection = () => {
           }}
           transition={{ duration: 0.4, delay: 0.45 }}
         >
-          <a href="#projects" className="px-6 py-3 rounded-md bg-white text-black font-semibold text-sm transition-colors">View Projects</a>
-          <a href="#contact" className="px-6 py-3 rounded-md font-semibold text-sm transition-colors text-white" style={{ border: "1px solid rgba(255,255,255,0.2)" }}>Hire Me</a>
+            <a href="#projects" className="w-36 h-11 flex items-center justify-center rounded-md bg-white text-black font-semibold text-sm">View Projects</a>
+            <a href="#contact" className="w-36 h-11 flex items-center justify-center rounded-md font-semibold text-sm text-white" style={{ border: "1px solid rgba(255,255,255,0.4)" }}>Hire Me</a>
         </motion.div>
 
         <motion.div

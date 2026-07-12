@@ -11,7 +11,7 @@ const ParticlesBackground = () => {
   return (
     <Particles
       id="tsparticles"
-      className="absolute inset-0 z-0"
+      className="absolute inset-0 -z-10 h-screen"
       init={particlesInit}
       options={{
         fpsLimit: 120,
