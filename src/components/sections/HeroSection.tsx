@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import ParticlesBackground from "../ParticlesBackground";
 import { Spotlight } from "../ui/spotlight-new";
 
 const roles = [
@@ -48,12 +47,29 @@ const HeroSection = () => {
     return () => clearTimeout(timeout);
   }, [displayed, typing, roleIndex]);
 
+  const scrollTo = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-black/[0.96] antialiased bg-grid-white/[0.02]"
+      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-black antialiased"
     >
-      <ParticlesBackground />
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.07) 1px, transparent 1px)",
+          backgroundSize: "32px 32px",
+        }}
+      />
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          background: "radial-gradient(ellipse 70% 60% at 50% 50%, rgba(0,200,80,0.05) 0%, transparent 70%)",
+        }}
+      />
+
       <Spotlight variant="static" />
 
       <div className="container mx-auto px-4 z-10 text-center">
@@ -97,7 +113,7 @@ const HeroSection = () => {
         </motion.p>
 
         <motion.div
-          className="flex flex-col sm:flex-row gap-4 justify-center mb-14"
+          className="flex flex-row gap-4 justify-center mb-14"
           initial={{ opacity: 0, y: 20 }}
           animate={{
             opacity: isVisible ? (scrolled ? 0 : 1) : 0,
@@ -105,8 +121,19 @@ const HeroSection = () => {
           }}
           transition={{ duration: 0.4, delay: 0.45 }}
         >
-            <a href="#projects" className="w-36 h-11 flex items-center justify-center rounded-md bg-white text-black font-semibold text-sm">View Projects</a>
-            <a href="#contact" className="w-36 h-11 flex items-center justify-center rounded-md font-semibold text-sm text-white" style={{ border: "1px solid rgba(255,255,255,0.4)" }}>Hire Me</a>
+          <button
+            onClick={() => scrollTo("projects")}
+            className="w-36 h-11 flex items-center justify-center rounded-md bg-white text-black font-semibold text-sm cursor-pointer"
+          >
+            View Projects
+          </button>
+          <button
+            onClick={() => scrollTo("contact")}
+            className="w-36 h-11 flex items-center justify-center rounded-md font-semibold text-sm text-white cursor-pointer"
+            style={{ border: "1px solid rgba(255,255,255,0.4)" }}
+          >
+            Hire Me
+          </button>
         </motion.div>
 
         <motion.div
@@ -114,22 +141,11 @@ const HeroSection = () => {
           animate={{ opacity: isVisible ? (scrolled ? 0 : 1) : 0 }}
           transition={{ duration: 0.4, delay: 0.5 }}
         >
-          <a href="#about" className="inline-block animate-bounce">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="36"
-              height="36"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-white"
-            >
+          <button onClick={() => scrollTo("about")} className="inline-block animate-bounce cursor-pointer bg-transparent border-none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
               <path d="M12 5v14M5 12l7 7 7-7" />
             </svg>
-          </a>
+          </button>
         </motion.div>
       </div>
     </section>
