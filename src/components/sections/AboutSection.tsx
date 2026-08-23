@@ -55,7 +55,7 @@ const AboutSection = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
             >
               <img
-                src="https://github.com/AHIRAJ-K/Portfolio/blob/main/Images/PROFILE_1.jpg?raw=true"
+                src="https://github.com/AHIRAJ-K/Portfolio/blob/main/Images/profilepicture.jpg?raw=true"
                 alt="Ahiraj K"
                 className="w-full h-full object-cover"
               />
