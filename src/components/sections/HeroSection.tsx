@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Spotlight } from "../ui/spotlight-new";
+import { useNavigate } from "react-router-dom";
 
 const roles = [
   "ECE Undergraduate",
@@ -15,6 +16,7 @@ const HeroSection = () => {
   const [roleIndex, setRoleIndex] = useState(0);
   const [displayed, setDisplayed] = useState("");
   const [typing, setTyping] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setIsVisible(true);
@@ -122,13 +124,13 @@ const HeroSection = () => {
           transition={{ duration: 0.4, delay: 0.45 }}
         >
           <button
-            onClick={() => scrollTo("projects")}
+            onClick={() => navigate("/projects")}
             className="w-36 h-11 flex items-center justify-center rounded-md bg-white text-black font-semibold text-sm cursor-pointer"
           >
             View Projects
           </button>
           <button
-            onClick={() => scrollTo("contact")}
+            onClick={() => navigate("/contact")}
             className="w-36 h-11 flex items-center justify-center rounded-md font-semibold text-sm text-white cursor-pointer"
             style={{ border: "1px solid rgba(255,255,255,0.4)" }}
           >
@@ -141,7 +143,10 @@ const HeroSection = () => {
           animate={{ opacity: isVisible ? (scrolled ? 0 : 1) : 0 }}
           transition={{ duration: 0.4, delay: 0.5 }}
         >
-          <button onClick={() => scrollTo("about")} className="inline-block animate-bounce cursor-pointer bg-transparent border-none">
+          <button
+            onClick={() => scrollTo("about")}
+            className="inline-block animate-bounce cursor-pointer bg-transparent border-none"
+          >
             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
               <path d="M12 5v14M5 12l7 7 7-7" />
             </svg>
