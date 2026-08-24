@@ -58,17 +58,88 @@ const HeroSection = () => {
       id="hero"
       className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-black antialiased"
     >
+      {/* PCB circuit SVG background */}
+      <div className="absolute inset-0 z-0 opacity-20">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+              <feMerge>
+                <feMergeNode in="coloredBlur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+
+          {/* Horizontal traces */}
+          <line x1="0" y1="20%" x2="30%" y2="20%" stroke="#00ff64" strokeWidth="1.5" filter="url(#glow)" />
+          <line x1="70%" y1="20%" x2="100%" y2="20%" stroke="#00ff64" strokeWidth="1.5" filter="url(#glow)" />
+          <line x1="0" y1="80%" x2="25%" y2="80%" stroke="#00ff64" strokeWidth="1.5" filter="url(#glow)" />
+          <line x1="75%" y1="80%" x2="100%" y2="80%" stroke="#00ff64" strokeWidth="1.5" filter="url(#glow)" />
+          <line x1="0" y1="50%" x2="15%" y2="50%" stroke="#00ff64" strokeWidth="1" filter="url(#glow)" />
+          <line x1="85%" y1="50%" x2="100%" y2="50%" stroke="#00ff64" strokeWidth="1" filter="url(#glow)" />
+
+          {/* Vertical traces */}
+          <line x1="20%" y1="0" x2="20%" y2="15%" stroke="#00ff64" strokeWidth="1.5" filter="url(#glow)" />
+          <line x1="20%" y1="25%" x2="20%" y2="75%" stroke="#00ff64" strokeWidth="1" filter="url(#glow)" />
+          <line x1="20%" y1="85%" x2="20%" y2="100%" stroke="#00ff64" strokeWidth="1.5" filter="url(#glow)" />
+          <line x1="80%" y1="0" x2="80%" y2="15%" stroke="#00ff64" strokeWidth="1.5" filter="url(#glow)" />
+          <line x1="80%" y1="25%" x2="80%" y2="75%" stroke="#00ff64" strokeWidth="1" filter="url(#glow)" />
+          <line x1="80%" y1="85%" x2="80%" y2="100%" stroke="#00ff64" strokeWidth="1.5" filter="url(#glow)" />
+
+          {/* Corner L-shaped traces */}
+          <polyline points="0,10% 10%,10% 10%,20%" fill="none" stroke="#00ff64" strokeWidth="1.5" filter="url(#glow)" />
+          <polyline points="100%,10% 90%,10% 90%,20%" fill="none" stroke="#00ff64" strokeWidth="1.5" filter="url(#glow)" />
+          <polyline points="0,90% 10%,90% 10%,80%" fill="none" stroke="#00ff64" strokeWidth="1.5" filter="url(#glow)" />
+          <polyline points="100%,90% 90%,90% 90%,80%" fill="none" stroke="#00ff64" strokeWidth="1.5" filter="url(#glow)" />
+
+          {/* Via pads (circles at junctions) */}
+          <circle cx="20%" cy="20%" r="5" fill="none" stroke="#00ff64" strokeWidth="2" filter="url(#glow)" />
+          <circle cx="80%" cy="20%" r="5" fill="none" stroke="#00ff64" strokeWidth="2" filter="url(#glow)" />
+          <circle cx="20%" cy="80%" r="5" fill="none" stroke="#00ff64" strokeWidth="2" filter="url(#glow)" />
+          <circle cx="80%" cy="80%" r="5" fill="none" stroke="#00ff64" strokeWidth="2" filter="url(#glow)" />
+          <circle cx="10%" cy="20%" r="3" fill="#00ff64" opacity="0.6" filter="url(#glow)" />
+          <circle cx="90%" cy="20%" r="3" fill="#00ff64" opacity="0.6" filter="url(#glow)" />
+          <circle cx="10%" cy="80%" r="3" fill="#00ff64" opacity="0.6" filter="url(#glow)" />
+          <circle cx="90%" cy="80%" r="3" fill="#00ff64" opacity="0.6" filter="url(#glow)" />
+          <circle cx="20%" cy="50%" r="4" fill="none" stroke="#00ff64" strokeWidth="1.5" filter="url(#glow)" />
+          <circle cx="80%" cy="50%" r="4" fill="none" stroke="#00ff64" strokeWidth="1.5" filter="url(#glow)" />
+
+          {/* IC chip outline left */}
+          <rect x="3%" y="35%" width="12%" height="30%" fill="none" stroke="#00ff64" strokeWidth="1.5" filter="url(#glow)" rx="2" />
+          <line x1="3%" y1="42%" x2="0" y2="42%" stroke="#00ff64" strokeWidth="1" filter="url(#glow)" />
+          <line x1="3%" y1="50%" x2="0" y2="50%" stroke="#00ff64" strokeWidth="1" filter="url(#glow)" />
+          <line x1="3%" y1="58%" x2="0" y2="58%" stroke="#00ff64" strokeWidth="1" filter="url(#glow)" />
+          <line x1="15%" y1="42%" x2="20%" y2="42%" stroke="#00ff64" strokeWidth="1" filter="url(#glow)" />
+          <line x1="15%" y1="50%" x2="20%" y2="50%" stroke="#00ff64" strokeWidth="1" filter="url(#glow)" />
+          <line x1="15%" y1="58%" x2="20%" y2="58%" stroke="#00ff64" strokeWidth="1" filter="url(#glow)" />
+
+          {/* IC chip outline right */}
+          <rect x="85%" y="35%" width="12%" height="30%" fill="none" stroke="#00ff64" strokeWidth="1.5" filter="url(#glow)" rx="2" />
+          <line x1="85%" y1="42%" x2="80%" y2="42%" stroke="#00ff64" strokeWidth="1" filter="url(#glow)" />
+          <line x1="85%" y1="50%" x2="80%" y2="50%" stroke="#00ff64" strokeWidth="1" filter="url(#glow)" />
+          <line x1="85%" y1="58%" x2="80%" y2="58%" stroke="#00ff64" strokeWidth="1" filter="url(#glow)" />
+          <line x1="97%" y1="42%" x2="100%" y2="42%" stroke="#00ff64" strokeWidth="1" filter="url(#glow)" />
+          <line x1="97%" y1="50%" x2="100%" y2="50%" stroke="#00ff64" strokeWidth="1" filter="url(#glow)" />
+          <line x1="97%" y1="58%" x2="100%" y2="58%" stroke="#00ff64" strokeWidth="1" filter="url(#glow)" />
+
+          {/* Animated pulse dot */}
+          <circle cx="20%" cy="20%" r="8" fill="#00ff64" opacity="0.15" filter="url(#glow)">
+            <animate attributeName="r" values="6;12;6" dur="2s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.3;0;0.3" dur="2s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="80%" cy="80%" r="8" fill="#00ff64" opacity="0.15" filter="url(#glow)">
+            <animate attributeName="r" values="6;12;6" dur="2.5s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.3;0;0.3" dur="2.5s" repeatCount="indefinite" />
+          </circle>
+        </svg>
+      </div>
+
+      {/* Center radial glow */}
       <div
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.07) 1px, transparent 1px)",
-          backgroundSize: "32px 32px",
-        }}
-      />
-      <div
-        className="absolute inset-0 z-0"
-        style={{
-          background: "radial-gradient(ellipse 70% 60% at 50% 50%, rgba(0,200,80,0.05) 0%, transparent 70%)",
+          background: "radial-gradient(ellipse 60% 50% at 50% 50%, rgba(0,200,80,0.06) 0%, transparent 70%)",
         }}
       />
 
@@ -111,7 +182,7 @@ const HeroSection = () => {
           }}
           transition={{ duration: 0.4, delay: 0.35 }}
         >
-          Building hardware that works — from FSM logic to PCB layout.
+          Building hardware that works, from FSM logic to PCB layout.
         </motion.p>
 
         <motion.div
