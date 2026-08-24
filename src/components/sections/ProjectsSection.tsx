@@ -85,11 +85,11 @@ const ProjectsSection = () => {
               className="bg-card rounded-xl overflow-hidden border border-border hover-glow transition-all duration-300 flex flex-col h-full"
               whileHover={{ y: -10 }}
             >
-              <div className="h-48 overflow-hidden">
+              <div className="h-56 overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-110"
                 />
               </div>
               <div className="p-6 flex flex-col flex-grow">
