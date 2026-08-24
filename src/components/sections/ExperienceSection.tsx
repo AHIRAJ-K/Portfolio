@@ -19,15 +19,15 @@ const ExperienceSection = () => {
     {
       id: 1,
       title: "Gen AI & Cloud Computing Internship",
-      organization: "IBM SkillsBuild — BharatCares / AICTE",
+      organization: "IBM SkillsBuild, BharatCares / AICTE",
       period: "July 2026",
-      description: "Completed an industry internship focused on Generative AI and Cloud Computing. Contributed to StudyMind AI — an AI-powered study platform — handling system architecture, AWS EC2 deployment, Docker/Caddy infrastructure setup, and full technical documentation.",
+      description: "Completed an industry internship focused on Generative AI and Cloud Computing. Built StudyMind AI, an AI-powered study platform, as the capstone project. My contributions covered system architecture design, AWS EC2 deployment, Docker and Caddy infrastructure setup, and full technical documentation.",
       type: "work",
     },
     {
       id: 2,
       title: "FPGA Architecture & Programming Workshop",
-      organization: "NIELIT Calicut — Arm Education / Chips to Startup Programme",
+      organization: "NIELIT Calicut, Arm Education / Chips to Startup Programme",
       period: "June - July 2025",
       description: "Completed a 75-hour intensive workshop on FPGA architecture and programming under the Arm Education and Chips to Startup (C2S) Programme. Covered digital design fundamentals, HDL programming, and FPGA implementation.",
       type: "work",
@@ -37,7 +37,7 @@ const ExperienceSection = () => {
       title: "Media Lead",
       organization: "Career Guidance & Placement Cell (CGPC), RIT Kottayam",
       period: "2024 - Present",
-      description: "Managing media and design responsibilities for the placement cell — creating promotional content, coordinating visual communication for placement events, and handling digital outreach.",
+      description: "Managing media and design responsibilities for the placement cell, creating promotional content, coordinating visual communication for placement events, and handling digital outreach.",
       type: "work",
     },
     {
