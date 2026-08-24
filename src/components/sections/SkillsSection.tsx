@@ -29,7 +29,7 @@ const SkillsSection = () => {
     },
     {
       name: "MATLAB",
-      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/matlab.png?raw=true"
+      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/matlab-logo.png?raw=true"
     }
   ];
 
