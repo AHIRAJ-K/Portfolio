@@ -68,7 +68,7 @@ const ProjectsSection = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Hardware and embedded systems projects — designed, built, and tested.
+            Here's what I've been building.
           </motion.p>
         </div>
 
