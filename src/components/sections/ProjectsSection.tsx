@@ -19,19 +19,19 @@ const ProjectsSection = () => {
     },
     {
       id: 2,
-      title: "Laser Security System",
-      description: "Built a laser-based intruder detection system using an 8051 microcontroller. The system triggers a buzzer and LED alert when the laser beam path is interrupted.",
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5",
-      tags: ["8051 Microcontroller", "Embedded C", "Keil uVision"],
-      link: "#",
-    },
-    {
-      id: 3,
       title: "Data Transfer Using LiFi",
       description: "Developed a light-based data communication system using LiFi technology. Transmits data through modulated light signals and receives it via a photodetector, demonstrating optical wireless communication.",
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
       tags: ["Embedded C", "Arduino", "LiFi", "Optical Communication"],
       link: "https://github.com/AHIRAJ-K/data-transfer-using-lifi",
+    },
+    {
+      id: 3,
+      title: "Laser Security System",
+      description: "Built a laser-based intruder detection system using an 8051 microcontroller. The system triggers a buzzer and LED alert when the laser beam path is interrupted.",
+      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5",
+      tags: ["8051 Microcontroller", "Embedded C", "Keil uVision"],
+      link: "#",
     },
   ];
 
