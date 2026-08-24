@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
-// Skill type definition
 interface Skill {
   name: string;
   icon: string;
@@ -11,7 +10,6 @@ const SkillsSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.1 });
 
-  
   const programmingLanguages: Skill[] = [
     {
       name: "C/C++",
@@ -23,23 +21,18 @@ const SkillsSection = () => {
     },
     {
       name: "Embedded C",
-      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/Embedded%20C.png?raw=true" // Using a chip icon for Embedded C
-    },
-    {
-      name: "HTML",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-    },
-    {
-      name: "CSS",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/Embedded%20C.png?raw=true"
     },
     {
       name: "Verilog",
       icon: "https://api.iconify.design/simple-icons:v.svg?color=%230d9488"
+    },
+    {
+      name: "MATLAB",
+      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/matlab.png?raw=true"
     }
   ];
 
-  
   const tools: Skill[] = [
     {
       name: "Git",
@@ -59,23 +52,27 @@ const SkillsSection = () => {
     },
     {
       name: "Keil uVision",
-      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/Keil.png?raw=true" // Using a microcontroller icon
+      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/Keil.png?raw=true"
     },
     {
       name: "TINA",
-      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/tina-logo.png?raw=true" // Using a circuit icon
+      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/tina-logo.png?raw=true"
     },
     {
       name: "Xilinx Vivado",
-      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/Vivado.png?raw=true" // Using a developer board icon
+      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/Vivado.png?raw=true"
+    },
+    {
+      name: "Altium Designer",
+      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/altium.png?raw=true"
     },
     {
       name: "Proteus",
-      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/proteus.png?raw=true" // Using a circuit board icon
+      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/proteus.png?raw=true"
     },
     {
       name: "Tinkercad",
-      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/TINKERCAD.png?raw=true" // Using a tools icon
+      icon: "https://github.com/AHIRAJ-K/Portfolio/blob/main/Logos/TINKERCAD.png?raw=true"
     },
     {
       name: "Photoshop",
@@ -91,35 +88,6 @@ const SkillsSection = () => {
     }
   ];
 
-  
-  const softSkills: Skill[] = [
-    {
-      name: "Teamwork",
-      icon: "https://api.iconify.design/material-symbols:groups.svg?color=%23F97316" // Orange
-    },
-    {
-      name: "Communication",
-      icon: "https://api.iconify.design/material-symbols:chat-bubble.svg?color=%238B5CF6" // Purple
-    },
-    {
-      name: "Problem Solving",
-      icon: "https://api.iconify.design/material-symbols:lightbulb.svg?color=%2310B981" // Green
-    },
-    {
-      name: "Time Management",
-      icon: "https://api.iconify.design/material-symbols:schedule.svg?color=%230EA5E9" // Sky Blue
-    },
-    {
-      name: "Adaptability",
-      icon: "https://api.iconify.design/material-symbols:change-circle.svg?color=%23D946EF" // Magenta
-    },
-    {
-      name: "Quick Learner",
-      icon: "https://api.iconify.design/material-symbols:rocket-launch.svg?color=%23EF4444" // Red
-    }
-  ];
-
-  
   const renderSkillCards = (skills: Skill[]) => {
     return (
       <motion.div
@@ -132,10 +100,7 @@ const SkillsSection = () => {
           <motion.div
             key={skill.name}
             variants={item}
-            whileHover={{
-              y: -5,
-              scale: 1.05
-            }}
+            whileHover={{ y: -5, scale: 1.05 }}
             className="bg-card rounded-lg p-4 flex flex-col items-center justify-center border border-border hover:border-primary/50 transition-all duration-300"
           >
             <div className="w-12 h-12 mb-3 flex items-center justify-center">
@@ -152,29 +117,20 @@ const SkillsSection = () => {
     );
   };
 
-  // Animation variants
   const container = {
-    hidden: {
-      opacity: 0
-    },
+    hidden: { opacity: 0 },
     show: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.05
-      }
+      transition: { staggerChildren: 0.05 }
     }
   };
+
   const item = {
-    hidden: {
-      opacity: 0,
-      scale: 0.9
-    },
+    hidden: { opacity: 0, scale: 0.9 },
     show: {
       opacity: 1,
       scale: 1,
-      transition: {
-        duration: 0.3
-      }
+      transition: { duration: 0.3 }
     }
   };
 
@@ -183,119 +139,46 @@ const SkillsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <motion.h2
-            initial={{
-              opacity: 0,
-              y: 20
-            }}
-            animate={isInView ? {
-              opacity: 1,
-              y: 0
-            } : {
-              opacity: 0,
-              y: 20
-            }}
-            transition={{
-              duration: 0.5
-            }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ duration: 0.5 }}
             className="font-bold mb-4 text-6xl"
           >
             Skills
           </motion.h2>
           <motion.p
             className="text-muted-foreground max-w-2xl mx-auto"
-            initial={{
-              opacity: 0,
-              y: 20
-            }}
-            animate={isInView ? {
-              opacity: 1,
-              y: 0
-            } : {
-              opacity: 0,
-              y: 20
-            }}
-            transition={{
-              duration: 0.5,
-              delay: 0.1
-            }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
           >
-            My technical expertise and professional capabilities in the field of Electronics & Communication Engineering.
+            Tools and languages I use to design, build, and test hardware and embedded systems.
           </motion.p>
         </div>
 
         <div className="space-y-16">
-          {/* Updated Programming & Web Technologies */}
           <div>
             <motion.h3
               className="text-2xl font-bold mb-6 text-primary"
-              initial={{
-                opacity: 0,
-                x: -20
-              }}
-              animate={isInView ? {
-                opacity: 1,
-                x: 0
-              } : {
-                opacity: 0,
-                x: -20
-              }}
-              transition={{
-                duration: 0.5
-              }}
+              initial={{ opacity: 0, x: -20 }}
+              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+              transition={{ duration: 0.5 }}
             >
-              Programming & Web Technologies
+              Languages & HDL
             </motion.h3>
             {renderSkillCards(programmingLanguages)}
           </div>
 
-          {/* Software & Tools */}
           <div>
             <motion.h3
               className="text-2xl font-bold mb-6 text-secondary"
-              initial={{
-                opacity: 0,
-                x: -20
-              }}
-              animate={isInView ? {
-                opacity: 1,
-                x: 0
-              } : {
-                opacity: 0,
-                x: -20
-              }}
-              transition={{
-                duration: 0.5,
-                delay: 0.1
-              }}
+              initial={{ opacity: 0, x: -20 }}
+              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
             >
               Software & Tools
             </motion.h3>
             {renderSkillCards(tools)}
-          </div>
-
-          {/* Soft Skills */}
-          <div>
-            <motion.h3
-              className="text-2xl font-bold mb-6 text-accent"
-              initial={{
-                opacity: 0,
-                x: -20
-              }}
-              animate={isInView ? {
-                opacity: 1,
-                x: 0
-              } : {
-                opacity: 0,
-                x: -20
-              }}
-              transition={{
-                duration: 0.5,
-                delay: 0.2
-              }}
-            >
-              Soft Skills
-            </motion.h3>
-            {renderSkillCards(softSkills)}
           </div>
         </div>
       </div>
