@@ -19,19 +19,43 @@ const ExperienceSection = () => {
     {
       id: 1,
       title: "B.Tech in Electronics and Communication Engineering",
-      organization: "Rajiv Gandhi Institute of Technology (RIT)",
+      organization: "Rajiv Gandhi Institute of Technology (RIT), Kottayam",
       period: "2023 - Present",
-      description: "Specializing in digital electronics, communication systems, and VLSI. Developed expertise in circuit simulation, HDL design, and embedded C programming. Demonstrated strong teamwork, problem‑solving, and communication skills.",
+      description: "Specializing in digital electronics, VLSI, and embedded systems. Coursework includes HDL design, circuit simulation, microprocessor architecture, and communication systems.",
       type: "education",
     },
     {
       id: 2,
+      title: "Media Lead",
+      organization: "Career Guidance & Placement Cell (CGPC), RIT Kottayam",
+      period: "2024 - Present",
+      description: "Managing media and design responsibilities for the placement cell — creating promotional content, coordinating visual communication for placement events, and handling digital outreach.",
+      type: "work",
+    },
+    {
+      id: 3,
+      title: "FPGA Architecture & Programming Workshop",
+      organization: "NIELIT Calicut — Arm Education / Chips to Startup Programme",
+      period: "June - July 2025",
+      description: "Completed a 75-hour intensive workshop on FPGA architecture and programming under the Arm Education and Chips to Startup (C2S) Programme. Covered digital design fundamentals, HDL programming, and FPGA implementation.",
+      type: "work",
+    },
+    {
+      id: 4,
+      title: "Gen AI & Cloud Computing Internship",
+      organization: "IBM SkillsBuild — BharatCares / AICTE",
+      period: "July 2026",
+      description: "Completed an industry internship focused on Generative AI and Cloud Computing. Contributed to StudyMind AI — an AI-powered study platform — handling system architecture, AWS EC2 deployment, Docker/Caddy infrastructure setup, and full technical documentation.",
+      type: "work",
+    },
+    {
+      id: 5,
       title: "Higher Secondary Education",
       organization: "Sevamandir Post Basic HSS",
       period: "2020 - 2022",
-      description: "Completed Higher Secondary Education with a focus on Computer Science, gaining a solid foundation in programming, mathematics, and science, and preparing for further studies in Electronics and Communication Engineering.",
+      description: "Completed Higher Secondary Education with a focus on Computer Science, gaining a foundation in programming, mathematics, and science.",
       type: "education",
-    }
+    },
   ];
 
   return (
@@ -52,12 +76,11 @@ const ExperienceSection = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            My educational background and professional journey in the field of Electronics & Communication Engineering.
+            Education, certifications, and roles I've taken on so far.
           </motion.p>
         </div>
 
         <div className="relative">
-          {/* Timeline center line */}
           <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-border"></div>
 
           <div className="relative z-10">
@@ -107,7 +130,6 @@ const ExperienceSection = () => {
                   </div>
                 </div>
 
-                {/* Timeline dot */}
                 <div
                   className={`absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full border-4 ${
                     exp.type === "education"
